@@ -71,10 +71,7 @@ export default (props: Props) => {
         class="message prose prose-slate dark:prose-invert dark:text-slate break-words overflow-hidden"
         innerHTML={md
           .render(props.message)
-          .replace(
-            /Vercel/g,
-            `<a href="http://vercel.com/?utm_source=busiyi&utm_campaign=oss" style="border-bottom:0">${vercel}</a>`
-          )
+          
           .replace(
             /OpenAI/g,
             `<a href="https://www.openai.com" style="border-bottom:0">${openai}</a>`
